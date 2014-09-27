@@ -1,0 +1,55 @@
+﻿Build started 25/09/2014 15:01:39.
+     1>Project "C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\zlib.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"zlib.dir\Release\\" /Fd"zlib.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt ..\..\..\..\io_png\libs\zlib\adler32.c ..\..\..\..\io_png\libs\zlib\compress.c ..\..\..\..\io_png\libs\zlib\crc32.c ..\..\..\..\io_png\libs\zlib\deflate.c ..\..\..\..\io_png\libs\zlib\gzio.c ..\..\..\..\io_png\libs\zlib\infback.c ..\..\..\..\io_png\libs\zlib\inffast.c ..\..\..\..\io_png\libs\zlib\inflate.c ..\..\..\..\io_png\libs\zlib\inftrees.c ..\..\..\..\io_png\libs\zlib\minigzip.c ..\..\..\..\io_png\libs\zlib\trees.c ..\..\..\..\io_png\libs\zlib\uncompr.c ..\..\..\..\io_png\libs\zlib\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzio.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         minigzip.c
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(216): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(278) : see declaration of 'unlink'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(256): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(278) : see declaration of 'unlink'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(301): warning C4996: 'setmode': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _setmode. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(338) : see declaration of 'setmode'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(301): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(718) : see declaration of 'fileno'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(302): warning C4996: 'setmode': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _setmode. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(338) : see declaration of 'setmode'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(304): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(718) : see declaration of 'fileno'
+     1>..\..\..\..\io_png\libs\zlib\minigzip.c(308): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(718) : see declaration of 'fileno'
+         trees.c
+         uncompr.c
+         zutil.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\Release\zlib.lib" /NOLOGO /MACHINE:X64 zlib.dir\Release\adler32.obj
+         zlib.dir\Release\compress.obj
+         zlib.dir\Release\crc32.obj
+         zlib.dir\Release\deflate.obj
+         zlib.dir\Release\gzio.obj
+         zlib.dir\Release\infback.obj
+         zlib.dir\Release\inffast.obj
+         zlib.dir\Release\inflate.obj
+         zlib.dir\Release\inftrees.obj
+         zlib.dir\Release\minigzip.obj
+         zlib.dir\Release\trees.obj
+         zlib.dir\Release\uncompr.obj
+         zlib.dir\Release\zutil.obj
+         zlib.vcxproj -> C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\Release\zlib.lib
+     1>Done Building Project "C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\zlib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.23
