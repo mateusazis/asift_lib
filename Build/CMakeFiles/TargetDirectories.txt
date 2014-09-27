@@ -1,0 +1,7 @@
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/libs/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/libMatch/CMakeFiles/Match.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/libNumerics/CMakeFiles/Numerics.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/CMakeFiles/demo_ASIFT.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/libs/png/CMakeFiles/png.dir
+C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/libs/zlib/CMakeFiles/zlib.dir
