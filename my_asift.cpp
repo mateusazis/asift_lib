@@ -63,7 +63,7 @@ using namespace std;
 # define IM_X 800
 # define IM_Y 600
 
-std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>> computeMyASIFT(const char* pngA, const char* pngB)
+std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>> computeMyASIFT(std::vector<float> ipixels1, std::vector<float> ipixels2, int w1, int h1, int w2, int h2)
 {
 
 	/*if ((argc != 8) && (argc != 9)) {
@@ -86,24 +86,24 @@ std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>> computeMyASIFT(const ch
 
 	//////////////////////////////////////////////// Input
 	// Read image1
-	float * iarr1;
-	size_t w1, h1;
-	if (NULL == (iarr1 = read_png_f32_gray(pngA, &w1, &h1))) {
-		std::cerr << "Unable to load image file " << pngA << std::endl;
-		exit(1);
-	}
-	std::vector<float> ipixels1(iarr1, iarr1 + w1 * h1);
-	free(iarr1); /*memcheck*/
+	//float * iarr1;
+	//size_t w1, h1;
+	//if (NULL == (iarr1 = read_png_f32_gray(pngA, &w1, &h1))) {
+	//	std::cerr << "Unable to load image file " << pngA << std::endl;
+	//	exit(1);
+	//}
+	//std::vector<float> ipixels1(iarr1, iarr1 + w1 * h1);
+	//free(iarr1); /*memcheck*/
 
-	// Read image2
-	float * iarr2;
-	size_t w2, h2;
-	if (NULL == (iarr2 = read_png_f32_gray(pngB, &w2, &h2))) {
-		std::cerr << "Unable to load image file " << pngB << std::endl;
-		exit(1);
-	}
-	std::vector<float> ipixels2(iarr2, iarr2 + w2 * h2);
-	free(iarr2); /*memcheck*/
+	//// Read image2
+	//float * iarr2;
+	//size_t w2, h2;
+	//if (NULL == (iarr2 = read_png_f32_gray(pngB, &w2, &h2))) {
+	//	std::cerr << "Unable to load image file " << pngB << std::endl;
+	//	exit(1);
+	//}
+	//std::vector<float> ipixels2(iarr2, iarr2 + w2 * h2);
+	//free(iarr2); /*memcheck*/
 
 	///// Resize the images to area wS*hW in remaining the apsect-ratio	
 	///// Resize if the resize flag is not set or if the flag is set unequal to 0
@@ -251,66 +251,66 @@ std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>> computeMyASIFT(const ch
 	tend = time(0);
 	std::cout << "Keypoints matching accomplished in " << difftime(tend, tstart) << " seconds." << endl;
 
-	///////////////// Output image containing line matches (the two images are concatenated one above the other)
-	int band_w = 20; // insert a black band of width band_w between the two images for better visibility
+	/////////////////// Output image containing line matches (the two images are concatenated one above the other)
+	//int band_w = 20; // insert a black band of width band_w between the two images for better visibility
 
-	int wo = MAX(w1, w2);
-	int ho = h1 + h2 + band_w;
+	//int wo = MAX(w1, w2);
+	//int ho = h1 + h2 + band_w;
 
-	float *opixelsASIFT = new float[wo*ho];
+	//float *opixelsASIFT = new float[wo*ho];
 
-	for (int j = 0; j < (int)ho; j++)
-	for (int i = 0; i < (int)wo; i++)  opixelsASIFT[j*wo + i] = 255;
+	//for (int j = 0; j < (int)ho; j++)
+	//for (int i = 0; i < (int)wo; i++)  opixelsASIFT[j*wo + i] = 255;
 
-	/////////////////////////////////////////////////////////////////// Copy both images to output
-	for (int j = 0; j < (int)h1; j++)
-	for (int i = 0; i < (int)w1; i++)  opixelsASIFT[j*wo + i] = ipixels1[j*w1 + i];
+	///////////////////////////////////////////////////////////////////// Copy both images to output
+	//for (int j = 0; j < (int)h1; j++)
+	//for (int i = 0; i < (int)w1; i++)  opixelsASIFT[j*wo + i] = ipixels1[j*w1 + i];
 
-	for (int j = 0; j < (int)h2; j++)
-	for (int i = 0; i < (int)(int)w2; i++)  opixelsASIFT[(h1 + band_w + j)*wo + i] = ipixels2[j*w2 + i];
+	//for (int j = 0; j < (int)h2; j++)
+	//for (int i = 0; i < (int)(int)w2; i++)  opixelsASIFT[(h1 + band_w + j)*wo + i] = ipixels2[j*w2 + i];
 
-	//////////////////////////////////////////////////////////////////// Draw matches
-	matchingslist::iterator ptr = matchings.begin();
-	for (int i = 0; i < (int)matchings.size(); i++, ptr++)
-	{
-		draw_line(opixelsASIFT, (int)(zoom1*ptr->first.x), (int)(zoom1*ptr->first.y),
-			(int)(zoom2*ptr->second.x), (int)(zoom2*ptr->second.y) + h1 + band_w, 255.0f, wo, ho);
-	}
+	////////////////////////////////////////////////////////////////////// Draw matches
+	//matchingslist::iterator ptr = matchings.begin();
+	//for (int i = 0; i < (int)matchings.size(); i++, ptr++)
+	//{
+	//	draw_line(opixelsASIFT, (int)(zoom1*ptr->first.x), (int)(zoom1*ptr->first.y),
+	//		(int)(zoom2*ptr->second.x), (int)(zoom2*ptr->second.y) + h1 + band_w, 255.0f, wo, ho);
+	//}
 
-	///////////////////////////////////////////////////////////////// Save imgOut	
-	//write_png_f32(argv[3], opixelsASIFT, wo, ho, 1);
+	/////////////////////////////////////////////////////////////////// Save imgOut	
+	////write_png_f32("outh.png", opixelsASIFT, wo, ho, 1);
 
-	delete[] opixelsASIFT; /*memcheck*/
+	//delete[] opixelsASIFT; /*memcheck*/
 
-	/////////// Output image containing line matches (the two images are concatenated one aside the other)
-	int woH = w1 + w2 + band_w;
-	int hoH = MAX(h1, h2);
+	///////////// Output image containing line matches (the two images are concatenated one aside the other)
+	//int woH = w1 + w2 + band_w;
+	//int hoH = MAX(h1, h2);
 
-	float *opixelsASIFT_H = new float[woH*hoH];
+	//float *opixelsASIFT_H = new float[woH*hoH];
 
-	for (int j = 0; j < (int)hoH; j++)
-	for (int i = 0; i < (int)woH; i++)  opixelsASIFT_H[j*woH + i] = 255;
+	//for (int j = 0; j < (int)hoH; j++)
+	//for (int i = 0; i < (int)woH; i++)  opixelsASIFT_H[j*woH + i] = 255;
 
-	/////////////////////////////////////////////////////////////////// Copy both images to output
-	for (int j = 0; j < (int)h1; j++)
-	for (int i = 0; i < (int)w1; i++)  opixelsASIFT_H[j*woH + i] = ipixels1[j*w1 + i];
+	///////////////////////////////////////////////////////////////////// Copy both images to output
+	//for (int j = 0; j < (int)h1; j++)
+	//for (int i = 0; i < (int)w1; i++)  opixelsASIFT_H[j*woH + i] = ipixels1[j*w1 + i];
 
-	for (int j = 0; j < (int)h2; j++)
-	for (int i = 0; i < (int)w2; i++)  opixelsASIFT_H[j*woH + w1 + band_w + i] = ipixels2[j*w2 + i];
+	//for (int j = 0; j < (int)h2; j++)
+	//for (int i = 0; i < (int)w2; i++)  opixelsASIFT_H[j*woH + w1 + band_w + i] = ipixels2[j*w2 + i];
 
 
-	//////////////////////////////////////////////////////////////////// Draw matches
-	matchingslist::iterator ptrH = matchings.begin();
-	for (int i = 0; i < (int)matchings.size(); i++, ptrH++)
-	{
-		draw_line(opixelsASIFT_H, (int)(zoom1*ptrH->first.x), (int)(zoom1*ptrH->first.y),
-			(int)(zoom2*ptrH->second.x) + w1 + band_w, (int)(zoom2*ptrH->second.y), 255.0f, woH, hoH);
-	}
+	////////////////////////////////////////////////////////////////////// Draw matches
+	//matchingslist::iterator ptrH = matchings.begin();
+	//for (int i = 0; i < (int)matchings.size(); i++, ptrH++)
+	//{
+	//	draw_line(opixelsASIFT_H, (int)(zoom1*ptrH->first.x), (int)(zoom1*ptrH->first.y),
+	//		(int)(zoom2*ptrH->second.x) + w1 + band_w, (int)(zoom2*ptrH->second.y), 255.0f, woH, hoH);
+	//}
 
-	///////////////////////////////////////////////////////////////// Save imgOut	
-	//write_png_f32(argv[4], opixelsASIFT_H, woH, hoH, 1);
+	/////////////////////////////////////////////////////////////////// Save imgOut	
+	////write_png_f32(argv[4], opixelsASIFT_H, woH, hoH, 1);
 
-	delete[] opixelsASIFT_H; /*memcheck*/
+	//delete[] opixelsASIFT_H; /*memcheck*/
 
 	////// Write the coordinates of the matched points (row1, col1, row2, col2) to the file argv[5]
 	//std::ofstream file(argv[5]);
