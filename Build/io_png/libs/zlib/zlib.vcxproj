@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{518EF626-8C54-4F35-A725-6742B8BEDCE5}</ProjectGUID>
+    <ProjectGUID>{B44A7A5B-CFF9-4821-8351-1F590608759E}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>zlib</ProjectName>
@@ -57,19 +57,19 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlib.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlib</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlib.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlib</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlib.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlib</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
@@ -193,9 +193,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\..\io_png\libs\zlib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Mateus/Desktop/demo_ASIFT_src -BC:/Users/Mateus/Desktop/demo_ASIFT_src/Build --check-stamp-file C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/libs/demo_ASIFT_src -BD:/libs/demo_ASIFT_src/Build --check-stamp-file D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -203,12 +203,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Mateus/Desktop/demo_ASIFT_src -BC:/Users/Mateus/Desktop/demo_ASIFT_src/Build --check-stamp-file C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/libs/demo_ASIFT_src -BD:/libs/demo_ASIFT_src/Build --check-stamp-file D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -216,12 +216,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Mateus/Desktop/demo_ASIFT_src -BC:/Users/Mateus/Desktop/demo_ASIFT_src/Build --check-stamp-file C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/libs/demo_ASIFT_src -BD:/libs/demo_ASIFT_src/Build --check-stamp-file D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -229,12 +229,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Mateus/Desktop/demo_ASIFT_src -BC:/Users/Mateus/Desktop/demo_ASIFT_src/Build --check-stamp-file C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/libs/demo_ASIFT_src -BD:/libs/demo_ASIFT_src/Build --check-stamp-file D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -242,8 +242,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;C:\Users\Mateus\Desktop\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/libs/demo_ASIFT_src/io_png/libs/zlib/CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;D:\libs\demo_ASIFT_src\io_png\libs\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\libs\demo_ASIFT_src\Build\io_png\libs\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -274,8 +274,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\..\..\..\io_png\libs\zlib\zutil.c"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/ZERO_CHECK.vcxproj">
-      <Project>83ECDF5A-18C5-4E7F-84BA-A562539AB78A</Project>
+    <ProjectReference Include="D:/libs/demo_ASIFT_src/Build/ZERO_CHECK.vcxproj">
+      <Project>3B92DF3E-3E87-4539-B720-682605D10B63</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

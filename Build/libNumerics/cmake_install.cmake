@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mateus/Desktop/demo_ASIFT_src/libNumerics
+# Install script for directory: D:/libs/demo_ASIFT_src/libNumerics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
