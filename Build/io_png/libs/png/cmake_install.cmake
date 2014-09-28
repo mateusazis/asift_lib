@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs/png
+# Install script for directory: D:/libs/demo_ASIFT_src/io_png/libs/png
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

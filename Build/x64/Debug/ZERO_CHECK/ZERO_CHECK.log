@@ -1,0 +1,16 @@
+﻿Build started 28/09/2014 07:52:49.
+     1>Project "D:\libs\demo_ASIFT_src\Build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/io_png/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/io_png/libs/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/io_png/libs/zlib/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/io_png/libs/png/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/libMatch/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because D:/libs/demo_ASIFT_src/Build/libNumerics/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "D:\libs\demo_ASIFT_src\Build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.92

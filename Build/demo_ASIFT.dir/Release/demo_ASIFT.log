@@ -1,190 +1,17 @@
-﻿Build started 25/09/2014 15:01:47.
-     1>Project "C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\demo_ASIFT.vcxproj" on node 4 (Build target(s)).
-     1>CustomBuild:
-         Building Custom Rule C:/Users/Mateus/Desktop/demo_ASIFT_src/CMakeLists.txt
-         CMake does not need to re-run because C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\CMakeFiles\generate.stamp is up-to-date.
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Mateus\Desktop\demo_ASIFT_src\. /IC:\Users\Mateus\Desktop\demo_ASIFT_src\.\io_png /IC:\Users\Mateus\Desktop\demo_ASIFT_src\.\io_png\libs\png /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"demo_ASIFT.dir\Release\\" /Fd"demo_ASIFT.dir\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\numerics1.cpp ..\frot.cpp ..\splines.cpp ..\fproj.cpp ..\library.cpp ..\flimage.cpp ..\filter.cpp ..\demo_lib_sift.cpp ..\compute_asift_keypoints.cpp ..\compute_asift_matches.cpp ..\orsa.cpp ..\demo_ASIFT.cpp
+﻿Build started 28/09/2014 07:58:16.
+     1>Project "D:\libs\demo_ASIFT_src\Build\demo_ASIFT.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\libs\demo_ASIFT_src\. /ID:\libs\demo_ASIFT_src\.\io_png /ID:\libs\demo_ASIFT_src\.\io_png\libs\png /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"demo_ASIFT.dir\Release\\" /Fd"demo_ASIFT.dir\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\my_asift.cpp
      1>cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-         numerics1.cpp
-     1>..\numerics1.cpp(85): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\numerics1.cpp(134): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\numerics1.cpp(139): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         frot.cpp
-     1>..\frot.cpp(44): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\frot.cpp(45): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\frot.cpp(98): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         splines.cpp
-     1>..\splines.cpp(162): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(163): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(165): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(173): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(174): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(175): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(176): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\splines.cpp(177): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         fproj.cpp
-     1>..\fproj.cpp(80): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(81): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(98): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(99): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(100): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(101): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(102): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(104): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(105): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(106): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(107): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(108): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(141): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\fproj.cpp(142): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         library.cpp
-     1>..\library.cpp(34): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(50): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(215): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(399): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(401): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(405): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(407): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(469): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(601): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\library.cpp(629): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         flimage.cpp
-         filter.cpp
-     1>..\filter.cpp(24): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\filter.cpp(112): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\filter.cpp(165): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\filter.cpp(439): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         demo_lib_sift.cpp
-     1>..\demo_lib_sift.cpp(45): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(48): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(49): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(50): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(53): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(54): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(60): warning C4305: '=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(459): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(460): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(461): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(555): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(594): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(595): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(596): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(599): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(600): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(601): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(603): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(605): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(607): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(643): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(687): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(735): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(764): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(781): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(849): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(864): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(948): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(949): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(956): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(975): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(976): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(989): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(990): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(992): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(993): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>..\demo_lib_sift.cpp(1010): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(1034): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(1039): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\demo_lib_sift.cpp(1045): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         compute_asift_keypoints.cpp
-     1>..\compute_asift_keypoints.cpp(64): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>..\compute_asift_keypoints.cpp(216): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(217): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(244): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(254): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(308): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(325): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(413): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(420): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(437): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(440): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(483): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_keypoints.cpp(416): warning C4101: 'rr' : unreferenced local variable
-         compute_asift_matches.cpp
-     1>c:\users\mateus\desktop\demo_asift_src\libnumerics\matrix.h(132): warning C4522: 'libNumerics::vector<libNumerics::flnum>' : multiple assignment operators specified
-                 c:\users\mateus\desktop\demo_asift_src\libNumerics/numerics.h(32) : see reference to class template instantiation 'libNumerics::vector<libNumerics::flnum>' being compiled
-     1>..\compute_asift_matches.cpp(122): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\compute_asift_matches.cpp(199): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\compute_asift_matches.cpp(277): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(287): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(290): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(300): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(373): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(526): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(533): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(564): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(571): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\compute_asift_matches.cpp(781): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\compute_asift_matches.cpp(497): warning C4101: 'tt' : unreferenced local variable
-     1>..\compute_asift_matches.cpp(529): warning C4101: 'rr' : unreferenced local variable
-     1>..\compute_asift_matches.cpp(539): warning C4101: 'tt2' : unreferenced local variable
-     1>..\compute_asift_matches.cpp(566): warning C4101: 'rr2' : unreferenced local variable
-     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\vector(203): warning C4503: 'std::_Uninitialized_default_fill_n' : decorated name length exceeded, name was truncated
-     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\vector(203): warning C4503: 'std::_Uninit_def_fill_n' : decorated name length exceeded, name was truncated
-     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\vector(203): warning C4503: 'std::allocator_traits<_Alloc>::construct' : decorated name length exceeded, name was truncated
-                 with
-                 [
-                     _Alloc=std::allocator<std::vector<std::vector<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>,std::allocator<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>>>,std::allocator<std::vector<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>,std::allocator<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>>>>>>
-                 ]
-     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\vector(203): warning C4503: 'std::allocator_traits<_Alloc>::destroy' : decorated name length exceeded, name was truncated
-                 with
-                 [
-                     _Alloc=std::allocator<std::vector<std::vector<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>,std::allocator<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>>>,std::allocator<std::vector<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>,std::allocator<std::vector<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>,std::allocator<std::vector<std::vector<float,std::allocator<float>>,std::allocator<std::vector<float,std::allocator<float>>>>>>>>>>>
-                 ]
-         orsa.cpp
-     1>c:\users\mateus\desktop\demo_asift_src\libnumerics\matrix.h(132): warning C4522: 'libNumerics::vector<libNumerics::flnum>' : multiple assignment operators specified
-                 c:\users\mateus\desktop\demo_asift_src\libNumerics/numerics.h(32) : see reference to class template instantiation 'libNumerics::vector<libNumerics::flnum>' being compiled
-     1>..\orsa.cpp(107): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(108): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(109): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(118): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(205): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\orsa.cpp(214): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(416): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\orsa.cpp(448): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(451): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(452): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(453): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(454): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>..\orsa.cpp(508): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         demo_ASIFT.cpp
-     1>..\demo_ASIFT.cpp(127): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>..\demo_ASIFT.cpp(144): warning C4244: 'initializing' : conversion from 'size_t' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(155): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(158): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(164): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(165): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(171): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(175): warning C4244: 'initializing' : conversion from 'size_t' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(184): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(185): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\demo_ASIFT.cpp(191): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(192): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(198): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(204): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(205): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(210): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(211): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(256): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(257): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(276): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(285): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(286): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
-     1>..\demo_ASIFT.cpp(306): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
-         Generating Code...
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Mateus\Desktop\demo_ASIFT_src\. /IC:\Users\Mateus\Desktop\demo_ASIFT_src\.\io_png /IC:\Users\Mateus\Desktop\demo_ASIFT_src\.\io_png\libs\png /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"demo_ASIFT.dir\Release\\" /Fd"demo_ASIFT.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt ..\io_png\io_png.c
+         my_asift.cpp
+     1>..\my_asift.cpp(128): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\my_asift.cpp(145): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\my_asift.cpp(156): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\my_asift.cpp(159): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\my_asift.cpp(176): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\my_asift.cpp(185): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\my_asift.cpp(186): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\libs\demo_ASIFT_src\. /ID:\libs\demo_ASIFT_src\.\io_png /ID:\libs\demo_ASIFT_src\.\io_png\libs\png /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"demo_ASIFT.dir\Release\\" /Fd"demo_ASIFT.dir\Release\vc120.pdb" /Gd /TC /errorReport:prompt ..\io_png\io_png.c
      1>cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
          io_png.c
      1>..\io_png\io_png.c(146): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -192,8 +19,9 @@
      1>..\io_png\io_png.c(547): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
      1>..\io_png\io_png.c(650): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\Release\demo_ASIFT.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib io_png\libs\png\Release\png.lib io_png\libs\zlib\Release\zlib.lib libMatch\Release\Match.lib libNumerics\Release\Numerics.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/Release/demo_ASIFT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/Release/demo_ASIFT.lib" /MACHINE:X64  /machine:x64 demo_ASIFT.dir\Release\numerics1.obj
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\libs\demo_ASIFT_src\Build\Release\demo_ASIFT.lib" /NOLOGO /MACHINE:X64 demo_ASIFT.dir\Release\my_asift.obj
+         demo_ASIFT.dir\Release\numerics1.obj
          demo_ASIFT.dir\Release\frot.obj
          demo_ASIFT.dir\Release\splines.obj
          demo_ASIFT.dir\Release\fproj.obj
@@ -206,9 +34,9 @@
          demo_ASIFT.dir\Release\orsa.obj
          demo_ASIFT.dir\Release\demo_ASIFT.obj
          demo_ASIFT.dir\Release\io_png.obj
-         demo_ASIFT.vcxproj -> C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\Release\demo_ASIFT.exe
-     1>Done Building Project "C:\Users\Mateus\Desktop\demo_ASIFT_src\Build\demo_ASIFT.vcxproj" (Build target(s)).
+         demo_ASIFT.vcxproj -> D:\libs\demo_ASIFT_src\Build\Release\demo_ASIFT.lib
+     1>Done Building Project "D:\libs\demo_ASIFT_src\Build\demo_ASIFT.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:19.05
+Time Elapsed 00:00:03.10

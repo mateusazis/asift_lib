@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mateus/Desktop/demo_ASIFT_src
+# Install script for directory: D:/libs/demo_ASIFT_src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,9 +29,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/cmake_install.cmake")
-  include("C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/libMatch/cmake_install.cmake")
-  include("C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/libNumerics/cmake_install.cmake")
+  include("D:/libs/demo_ASIFT_src/Build/io_png/cmake_install.cmake")
+  include("D:/libs/demo_ASIFT_src/Build/libMatch/cmake_install.cmake")
+  include("D:/libs/demo_ASIFT_src/Build/libNumerics/cmake_install.cmake")
 
 endif()
 
@@ -41,7 +41,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "D:/libs/demo_ASIFT_src/Build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "D:/libs/demo_ASIFT_src/Build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

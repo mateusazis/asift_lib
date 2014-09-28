@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mateus/Desktop/demo_ASIFT_src/io_png/libs
+# Install script for directory: D:/libs/demo_ASIFT_src/io_png/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/libs/zlib/cmake_install.cmake")
-  include("C:/Users/Mateus/Desktop/demo_ASIFT_src/Build/io_png/libs/png/cmake_install.cmake")
+  include("D:/libs/demo_ASIFT_src/Build/io_png/libs/zlib/cmake_install.cmake")
+  include("D:/libs/demo_ASIFT_src/Build/io_png/libs/png/cmake_install.cmake")
 
 endif()
 
