@@ -2,3 +2,6 @@
 *.sdf
 *.tlog
 *.opensdf
+*.suo
+*.lib
+*.dll
