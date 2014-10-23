@@ -1,0 +1,10 @@
+all: myasift
+
+myasift:
+	g++ -c *.cpp -I./third_party -I. -fPIC
+	g++ *.o --shared -olibasift.so
+
+clean:
+	rm -rf *.o
+	rm libasift.so
+
