@@ -52,7 +52,6 @@ using namespace std;
 
 #include "demo_lib_sift.h"
 #include "demo_asift.h"
-#include "io_png/io_png.h"
 
 #include "library.h"
 #include "frot.h"
