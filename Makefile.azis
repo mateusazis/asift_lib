@@ -17,7 +17,7 @@ CXXOBJ	= $(CXXSRC:.cpp=.o)
 # all objects
 OBJ	= $(COBJ) $(CXXOBJ)
 # binary target
-BIN	= demo_ASIFT
+BIN	= libasift.so
 
 default	: $(BIN)
 
@@ -79,7 +79,7 @@ CXXFLAGS 	+= -I.
 
 # link all the opject code
 $(BIN): $(OBJ) $(LIBDEPS)
-	$(CXX) -o libasift.so $(OBJ) $(LDFLAGS)
+	$(CXX) -o $(BIN) $(OBJ) $(LDFLAGS)
 
 # housekeeping
 .PHONY	: clean distclean
