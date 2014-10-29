@@ -44,8 +44,8 @@ INCDIR = ./third_party
 # # libpng is required
 # LIBDEPS += libpng
 # # compile options to use the local libpng header
-CFLAGS 	+= -I$(INCDIR) -D_LOCAL_LIBS
-CXXFLAGS 	+= -I$(INCDIR) -D_LOCAL_LIBS
+CFLAGS 	+= -I$(INCDIR) -D_LOCAL_LIBS -fPIC
+CXXFLAGS 	+= -I$(INCDIR) -D_LOCAL_LIBS -fPIC
 # # link options to use the local libraries
 # LDFLAGS = $(LIBDIR)/libpng.a $(LIBDIR)/libz.a -lm
 # # io_png.o needs png.h
