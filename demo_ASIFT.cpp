@@ -62,7 +62,7 @@ using namespace std;
 # define IM_X 800
 # define IM_Y 600
 
-std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f> > computeMyASIFT(std::vector<float> ipixels1, std::vector<float> ipixels2, int w1, int h1, int w2, int h2)
+std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>, Eigen::aligned_allocator<Eigen::Vector2f> > computeMyASIFT(std::vector<float> ipixels1, std::vector<float> ipixels2, int w1, int h1, int w2, int h2)
 {
 
 	/*if ((argc != 8) && (argc != 9)) {
@@ -314,7 +314,7 @@ std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f> > computeMyASIFT(std::ve
 	////// Write the coordinates of the matched points (row1, col1, row2, col2) to the file argv[5]
 	//std::ofstream file(argv[5]);
 	//if (file.is_open())
-	std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f> > resp;
+	std::vector<std::pair<Eigen::Vector2f, Eigen::Vector2f>, Eigen::aligned_allocator<Eigen::Vector2f> > resp;
 	{
 		// Write the number of matchings in the first line
 		//file << num_matchings << std::endl;
